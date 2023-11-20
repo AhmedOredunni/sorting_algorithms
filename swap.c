@@ -1,16 +1,15 @@
 #include "sort.h"
 
 /**
- * swap - Swap two integer
- * @a: First integer to swap
- * @b: Second integer to swap
- * Reture: Nothing
-*/
+ * swap_ints - Swap two integers in an array.
+ * @a: The first integer to swap.
+ * @b: The second integer to swap.
+ */
 void swap(int *a, int *b)
 {
-	int temp;
+	int tmp;
 
-	temp = *a;
+	tmp = *a;
 	*a = *b;
-	*b = temp;
+	*b = tmp;
 }
