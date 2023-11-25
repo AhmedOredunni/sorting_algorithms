@@ -1,1 +1,1 @@
-Sorting algorithms & Big O by Toyyibib and Tobi
+Sorting algorithms & Big O by Toyyib and Tobi

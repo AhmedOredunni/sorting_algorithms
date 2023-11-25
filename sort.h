@@ -19,7 +19,7 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
-//prototypes
+
 void swap(int *a, int *b);
 void bubble_sort(int *array, size_t size);
 void print_array(const int *array, size_t size);
@@ -27,6 +27,7 @@ void print_list(const listint_t *list);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+<<<<<<< HEAD
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
@@ -35,5 +36,10 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
+=======
+void _swap(int *x, int *y, size_t size, int *array);
+int partition(int *array, int start, int end, size_t size);
+void quicksort(int *array, int start, int end, size_t size);
+>>>>>>> b2a2c89d9c6ebb8994c3bcf538ec624df504181e
 
 #endif

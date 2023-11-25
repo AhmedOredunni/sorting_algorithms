@@ -8,7 +8,7 @@
  * @size: size of array
  */
 
-void swap(int *x, int *y, size_t size, int *array)
+void _swap(int *x, int *y, size_t size, int *array)
 {
 	int tmp = *x;
 	*x = *y;
@@ -37,11 +37,11 @@ int partition(int *array, int start, int end, size_t size)
 		{
 			i++;
 			if (i != j && i >= 0)
-				swap(&array[i], &array[j], size, array);
+				_swap(&array[i], &array[j], size, array);
 		}
 	}
 	if (array[end] != array[i + 1])
-		swap(&array[i + 1], &array[end], size, array);
+		_swap(&array[i + 1], &array[end], size, array);
 
 	return (i + 1);
 }
